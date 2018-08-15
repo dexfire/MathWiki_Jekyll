@@ -8,10 +8,15 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.3"
+gem "jekyll", "3.6.2"
+# gem "jekyll", "~> 3.8.3"
+
+group :test do
+  gem 'json-schema', '= 2.8.0'
+end
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.0"
+gem 'minima', '= 2.1.1'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -19,7 +24,25 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem 'jekyll-avatar', '= 0.5.0'
+  gem 'jekyll-coffeescript', '= 1.0.2'
+  gem 'jekyll-sass-converter', '>= 1.5.0'
+  # stable version 1.5.0, new version 1.5.2
   gem "jekyll-feed", "~> 0.6"
+  gem 'jekyll-gist', '= 1.4.1'
+  gem 'jekyll-mentions', '= 1.2.0'
+  gem 'jekyll-paginate', '= 1.1.0'
+  gem 'jekyll-seo-tag', '= 2.3.0'
+  gem 'jekyll-redirect-from', '= 0.12.1'
+  gem 'jekyll-relative-links', '= 0.5.2'
+  gem 'jekyll-sitemap', '= 1.1.1'
+  gem 'jemoji', '= 0.8.1'
+  gem 'liquid', '= 4.0.0'
+  gem 'rouge', '= 2.2.1'
+  gem 'kramdown', '>= 1.14.0'
+  # stable version 1.14.0, new version 1.17.0
+  gem 'mercenary', '~> 0.3'
+  gem 'terminal-table', '~> 1.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
